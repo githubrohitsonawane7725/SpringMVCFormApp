@@ -15,7 +15,6 @@ public class UserController {
 	public String displayForm(Model model) {
 		System.out.println("hi");
 		int i = 10;
-		System.out.println("Hello, World!");
 		model.addAttribute("user", new User());
 		return "userForm";
 	}
