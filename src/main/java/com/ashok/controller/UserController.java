@@ -13,7 +13,6 @@ public class UserController {
 
     @RequestMapping(value = "/displayForm.htm", method = RequestMethod.GET)
     public String displayForm(Model model) {
-        System.out.println("Hello, World!"); // Added print statement
         int i = 10;
 
         model.addAttribute("user", new User());
