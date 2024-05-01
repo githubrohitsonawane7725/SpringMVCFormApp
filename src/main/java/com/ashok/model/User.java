@@ -7,6 +7,8 @@ public class User {
     private String email;
     private Long phno;
     private String gender;
+    private int age;  // New attribute
+    private String address;  // New attribute
 
     // Constructor (if needed)
     public User() {
@@ -54,7 +56,22 @@ public class User {
         this.gender = gender;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     // Other methods (if needed)
 }
-
 
