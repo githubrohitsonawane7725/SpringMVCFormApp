@@ -8,23 +8,18 @@ public class User {
     private Long phno;
     private String gender;
 
-    // Constructor, getters, and setters omitted for brevity
+    // Constructor, setters, and other methods omitted for brevity
 
-    public String toHTML() {
-        StringBuilder html = new StringBuilder();
-
-        html.append("<div>");
-        html.append("<p>Username: ").append(uname).append("</p>");
-        html.append("<p>Password: ").append(pwd).append("</p>");
-        html.append("<p>Email: ").append(email).append("</p>");
-        html.append("<p>Phone Number: ").append(phno).append("</p>");
-        html.append("<p>Gender: ").append(gender).append("</p>");
-        html.append("</div>");
-
-        return html.toString();
+    public String getUname() {
+        return uname;
     }
-}
 
+    public void setUname(String uname) {
+        this.uname = uname;
+    }
+
+    // Other getter methods for pwd, email, phno, and gender
+}
 
 
 
