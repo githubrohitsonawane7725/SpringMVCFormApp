@@ -10,15 +10,15 @@ public class User {
 
     // Constructor, setters, and other methods omitted for brevity
 
-    public String getUname() {
-        return uname;
+    public String getPwd() {
+        return pwd;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname;
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 
-    // Other getter methods for pwd, email, phno, and gender
+    // Other getter methods for uname, email, phno, and gender
 }
 
 
