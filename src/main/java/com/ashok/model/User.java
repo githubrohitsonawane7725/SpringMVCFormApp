@@ -10,6 +10,7 @@ public class User {
     private int age;  // New attribute
     private String address;  // New attribute
 
+
     // Constructor (if needed)
     public User() {
         // Default constructor
