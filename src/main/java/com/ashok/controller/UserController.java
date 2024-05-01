@@ -2,25 +2,28 @@ package com.ashok.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.ashok.model.User;
 
 @Controller
 public class UserController {
 
-    @GetMapping("/registration")
-    public String displayRegistrationForm(Model model) {
+    @RequestMapping(value = "/displayForm.htm", method = RequestMethod.GET)
+    public String displayForm(Model model) {
+   
+        
+        
         model.addAttribute("user", new User());
-        return "registrationForm";
+        return "userForm";
     }
 
-    @PostMapping("/register")
-    public String registerUser(@ModelAttribute("user") User user, Model model) {
-        // Here, you can add validation logic if needed
-        model.addAttribute("user", user);
-        return "registrationConfirmation";
+    @RequestMapping(value = "/regUser.htm", method = RequestMethod.POST)
+    public String regUser(Model model, @ModelAttribute("user") User u) {
+        model.addAttribute("user", u);
+        return "display";
     }
+
 }
