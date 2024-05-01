@@ -8,7 +8,15 @@ public class User {
     private Long phno;
     private String gender;
 
-    // Constructor, setters, and other methods omitted for brevity
+    // Constructor (if needed)
+
+    public String getUname() {
+        return uname;
+    }
+
+    public void setUname(String uname) {
+        this.uname = uname;
+    }
 
     public String getPwd() {
         return pwd;
@@ -18,8 +26,29 @@ public class User {
         this.pwd = pwd;
     }
 
-    // Other getter methods for uname, email, phno, and gender
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Long getPhno() {
+        return phno;
+    }
+
+    public void setPhno(Long phno) {
+        this.phno = phno;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    // Other methods (if needed)
 }
-
-
-
