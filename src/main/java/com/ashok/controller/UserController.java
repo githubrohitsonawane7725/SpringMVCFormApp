@@ -11,15 +11,18 @@ import com.ashok.model.User;
 @Controller
 public class UserController {
 
-    @RequestMapping(value = "/displayForm.htm", method = RequestMethod.GET)
-    public String displayForm(Model model) {
-        model.addAttribute("user", new User());
-        return "userForm";
-    }
+	@RequestMapping(value = "/displayForm.htm", method = RequestMethod.GET)
+	public String displayForm(Model model) {
+		System.out.println("hi");
+		int i = 10;
+		model.addAttribute("user", new User());
+		return "userForm";
+	}
 
-    @RequestMapping(value = "/regUser.htm", method = RequestMethod.POST)
-    public String regUser(@ModelAttribute("user") User u) {
-        return "display";
-    }
+	@RequestMapping(value = "/regUser.htm", method = RequestMethod.POST)
+	public String regUser(Model model, @ModelAttribute("user") User u) {
+		model.addAttribute("user", u);
+		return "display";
+	}
 
 }
