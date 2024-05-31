@@ -28,7 +28,6 @@
 			<version>3.0.1</version>
 		</dependency>
 
-		
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>javax.servlet.jsp-api</artifactId>
@@ -37,5 +36,6 @@
 	</dependencies>
 	<build>
 		<finalName>SpringFormApp</finalName>
+		<outputDirectory>C:\ProgramData\Jenkins\.jenkins\workspace\Myfristpipeline\docker</outputDirectory> <!-- Absolute path to your desired directory -->
 	</build>
 </project>
